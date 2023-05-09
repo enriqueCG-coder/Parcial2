@@ -29,11 +29,11 @@ namespace General.GUI
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMovimientos));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvMov = new System.Windows.Forms.DataGridView();
             this.IDMovimiento = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -46,11 +46,8 @@ namespace General.GUI
             this.lblRegistros = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.btnEliminar = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.btnEditar = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.btnAgregar = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.panelMovimientos = new System.Windows.Forms.Panel();
             this.btnCancelar = new System.Windows.Forms.Button();
@@ -71,12 +68,16 @@ namespace General.GUI
             this.txtID = new System.Windows.Forms.TextBox();
             this.header = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnEliminar = new System.Windows.Forms.ToolStripButton();
+            this.btnEditar = new System.Windows.Forms.ToolStripButton();
+            this.btnAgregar = new System.Windows.Forms.ToolStripButton();
             this.panelClientes = new System.Windows.Forms.Panel();
-            this.dgvCli = new System.Windows.Forms.DataGridView();
-            this.pIDCliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pCliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.dgvClientes = new System.Windows.Forms.DataGridView();
+            this.pIDCliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pCliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMov)).BeginInit();
             this.statusStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
@@ -84,8 +85,9 @@ namespace General.GUI
             this.groupBox1.SuspendLayout();
             this.header.SuspendLayout();
             this.panelClientes.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvCli)).BeginInit();
             this.panel2.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvMov
@@ -93,8 +95,8 @@ namespace General.GUI
             this.dgvMov.AllowUserToAddRows = false;
             this.dgvMov.AllowUserToDeleteRows = false;
             this.dgvMov.AllowUserToResizeRows = false;
-            dataGridViewCellStyle17.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.dgvMov.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle17;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.dgvMov.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvMov.BackgroundColor = System.Drawing.Color.White;
             this.dgvMov.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvMov.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
@@ -107,14 +109,14 @@ namespace General.GUI
             this.Concepto,
             this.Monto,
             this.Flujo});
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle18.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle18.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.SlateGray;
-            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvMov.DefaultCellStyle = dataGridViewCellStyle18;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.SlateGray;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvMov.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvMov.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvMov.Location = new System.Drawing.Point(0, 31);
             this.dgvMov.MultiSelect = false;
@@ -219,42 +221,15 @@ namespace General.GUI
             this.toolStripSeparator2.Name = "toolStripSeparator2";
             this.toolStripSeparator2.Size = new System.Drawing.Size(6, 31);
             // 
-            // btnEliminar
-            // 
-            this.btnEliminar.Image = global::General.Properties.Resources.trash;
-            this.btnEliminar.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(78, 28);
-            this.btnEliminar.Text = "Eliminar";
-            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
-            // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(6, 31);
             // 
-            // btnEditar
-            // 
-            this.btnEditar.Image = ((System.Drawing.Image)(resources.GetObject("btnEditar.Image")));
-            this.btnEditar.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(65, 28);
-            this.btnEditar.Text = "Editar";
-            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
-            // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
             this.toolStripSeparator3.Size = new System.Drawing.Size(6, 31);
-            // 
-            // btnAgregar
-            // 
-            this.btnAgregar.Image = global::General.Properties.Resources.add;
-            this.btnAgregar.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(77, 28);
-            this.btnAgregar.Text = "Agregar";
-            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // toolStripSeparator4
             // 
@@ -263,11 +238,12 @@ namespace General.GUI
             // 
             // panelMovimientos
             // 
+            this.panelMovimientos.Controls.Add(this.panelClientes);
             this.panelMovimientos.Controls.Add(this.btnCancelar);
             this.panelMovimientos.Controls.Add(this.btnGuardar);
             this.panelMovimientos.Controls.Add(this.groupBox1);
             this.panelMovimientos.Controls.Add(this.header);
-            this.panelMovimientos.Location = new System.Drawing.Point(20, 71);
+            this.panelMovimientos.Location = new System.Drawing.Point(131, 49);
             this.panelMovimientos.Name = "panelMovimientos";
             this.panelMovimientos.Size = new System.Drawing.Size(546, 275);
             this.panelMovimientos.TabIndex = 9;
@@ -456,49 +432,107 @@ namespace General.GUI
             this.label1.TabIndex = 0;
             this.label1.Text = "MOVIMIENTO";
             // 
+            // btnEliminar
+            // 
+            this.btnEliminar.Image = global::General.Properties.Resources.trash;
+            this.btnEliminar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(78, 28);
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
+            // 
+            // btnEditar
+            // 
+            this.btnEditar.Image = ((System.Drawing.Image)(resources.GetObject("btnEditar.Image")));
+            this.btnEditar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(65, 28);
+            this.btnEditar.Text = "Editar";
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
+            // 
+            // btnAgregar
+            // 
+            this.btnAgregar.Image = global::General.Properties.Resources.add;
+            this.btnAgregar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(77, 28);
+            this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
+            // 
             // panelClientes
             // 
             this.panelClientes.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panelClientes.Controls.Add(this.panelMovimientos);
-            this.panelClientes.Controls.Add(this.dgvCli);
+            this.panelClientes.Controls.Add(this.panel1);
             this.panelClientes.Controls.Add(this.panel2);
-            this.panelClientes.Location = new System.Drawing.Point(119, 31);
+            this.panelClientes.Location = new System.Drawing.Point(42, 16);
             this.panelClientes.Name = "panelClientes";
-            this.panelClientes.Size = new System.Drawing.Size(583, 311);
-            this.panelClientes.TabIndex = 4;
+            this.panelClientes.Size = new System.Drawing.Size(476, 256);
+            this.panelClientes.TabIndex = 6;
             // 
-            // dgvCli
+            // panel2
             // 
-            this.dgvCli.AllowUserToAddRows = false;
-            this.dgvCli.AllowUserToDeleteRows = false;
-            this.dgvCli.AllowUserToResizeRows = false;
-            dataGridViewCellStyle19.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.dgvCli.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle19;
-            this.dgvCli.BackgroundColor = System.Drawing.Color.White;
-            this.dgvCli.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgvCli.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
-            this.dgvCli.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCli.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.panel2.Controls.Add(this.label7);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.ForeColor = System.Drawing.Color.White;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(472, 47);
+            this.panel2.TabIndex = 3;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(158, 10);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(167, 19);
+            this.label7.TabIndex = 0;
+            this.label7.Text = "Seleccione un cliente";
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.panel1.Controls.Add(this.dgvClientes);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.ForeColor = System.Drawing.Color.White;
+            this.panel1.Location = new System.Drawing.Point(0, 47);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(472, 202);
+            this.panel1.TabIndex = 4;
+            // 
+            // dgvClientes
+            // 
+            this.dgvClientes.AllowUserToAddRows = false;
+            this.dgvClientes.AllowUserToDeleteRows = false;
+            this.dgvClientes.AllowUserToResizeRows = false;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.dgvClientes.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvClientes.BackgroundColor = System.Drawing.Color.White;
+            this.dgvClientes.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvClientes.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
+            this.dgvClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvClientes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.pIDCliente,
             this.pCliente});
-            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle20.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle20.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.Color.SlateGray;
-            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvCli.DefaultCellStyle = dataGridViewCellStyle20;
-            this.dgvCli.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvCli.Location = new System.Drawing.Point(0, 47);
-            this.dgvCli.MultiSelect = false;
-            this.dgvCli.Name = "dgvCli";
-            this.dgvCli.ReadOnly = true;
-            this.dgvCli.RowHeadersVisible = false;
-            this.dgvCli.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvCli.Size = new System.Drawing.Size(579, 260);
-            this.dgvCli.TabIndex = 9;
-            this.dgvCli.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCli_CellContentDoubleClick);
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.SlateGray;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvClientes.DefaultCellStyle = dataGridViewCellStyle4;
+            this.dgvClientes.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvClientes.Location = new System.Drawing.Point(0, 0);
+            this.dgvClientes.MultiSelect = false;
+            this.dgvClientes.Name = "dgvClientes";
+            this.dgvClientes.ReadOnly = true;
+            this.dgvClientes.RowHeadersVisible = false;
+            this.dgvClientes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvClientes.Size = new System.Drawing.Size(472, 202);
+            this.dgvClientes.TabIndex = 6;
+            this.dgvClientes.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvClientes_CellContentDoubleClick);
             // 
             // pIDCliente
             // 
@@ -515,33 +549,12 @@ namespace General.GUI
             this.pCliente.Name = "pCliente";
             this.pCliente.ReadOnly = true;
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.panel2.Controls.Add(this.label7);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.ForeColor = System.Drawing.Color.White;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(579, 47);
-            this.panel2.TabIndex = 1;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(206, 15);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(167, 19);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "Seleccione un cliente";
-            // 
             // frmMovimientos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.panelClientes);
+            this.Controls.Add(this.panelMovimientos);
             this.Controls.Add(this.dgvMov);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.toolStrip1);
@@ -560,9 +573,10 @@ namespace General.GUI
             this.header.ResumeLayout(false);
             this.header.PerformLayout();
             this.panelClientes.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvCli)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -608,9 +622,10 @@ namespace General.GUI
         public System.Windows.Forms.TextBox txtCli;
         public System.Windows.Forms.TextBox txtIDCliente;
         private System.Windows.Forms.Panel panelClientes;
+        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label7;
-        public System.Windows.Forms.DataGridView dgvCli;
+        public System.Windows.Forms.DataGridView dgvClientes;
         private System.Windows.Forms.DataGridViewTextBoxColumn pIDCliente;
         private System.Windows.Forms.DataGridViewTextBoxColumn pCliente;
     }

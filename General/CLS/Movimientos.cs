@@ -31,8 +31,7 @@ namespace General.CLS
             Int32 FilasInsertadas = 0;
             try
             {
-                Sentencia = "INSERT INTO Movimientos (Fecha,IDCliente,Concepto,Monto,Flujo)" +
-                            "VALUES('" + _Fecha + "', " + _IDCliente + ", '" + _Concepto + "', '" + _Monto + "', '" + _Flujo + "');";
+                Sentencia = "INSERT INTO Movimientos (Fecha,IDCliente,Concepto,Monto,Flujo) VALUES('" + _Fecha + "', " + _IDCliente + ", '" + _Concepto + "', '" + _Monto + "', '" + _Flujo + "');";
                 DataManager.DBOperacion Operacion = new DataManager.DBOperacion();
                 FilasInsertadas = Operacion.EjecutarSentencia(Sentencia);
                 if (FilasInsertadas > 0)

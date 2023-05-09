@@ -25,16 +25,16 @@ namespace General.GUI
         //METODO QUE LLENA LOS DATOS DE CLIENTE EN PANEL MOVIMIENTOS
         private void LlenarDatos()
         {
-            txtIDCliente.Text = dgvCli.CurrentRow.Cells["pIDCliente"].Value.ToString();
-            txtCli.Text = dgvCli.CurrentRow.Cells["pCliente"].Value.ToString();
+            txtIDCliente.Text = dgvClientes.CurrentRow.Cells["pIDCliente"].Value.ToString();
+            txtCli.Text = dgvClientes.CurrentRow.Cells["pCliente"].Value.ToString();
         }
 
         //CARGA LOS CLIENTES 
         private void cargarClientes()
         {
             _DATOS.DataSource = DataManager.DBConsultas.CLIENTES();
-            dgvCli.AutoGenerateColumns = false;
-            dgvCli.DataSource = _DATOS;
+            dgvClientes.AutoGenerateColumns = false;
+            dgvClientes.DataSource = _DATOS;
         }
 
         //CONTADOR DE REGISTROS DEL DATAGRIDVIEW
@@ -185,13 +185,7 @@ namespace General.GUI
         }
         #endregion
 
-        private void dgvClientes_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-            
-        }
-
-        private void dgvCli_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        private void dgvClientes_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             LlenarDatos();
             panelClientes.Visible = false;
